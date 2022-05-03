@@ -88,6 +88,7 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 0;
 }
 
 .texture-paper::before {
@@ -824,7 +825,28 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
 }
-
+.explanation{
+    margin: 18px;
+    font-size: 21.5px;
+    line-height: 24px;
+}
+.citation{
+    width: 100%;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+.citation-content{
+    font-size: 24px;
+    line-height: 24px;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.citation-source{
+    font-size: 22px;
+    font-weight: 100;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
