@@ -9,8 +9,13 @@ body {
 .footer-links{
     margin-top: 30px;
 }
+.footer-links ul{
+    padding: 0;
+    padding-top: 5px;
+}
 .footer-links a{
     outline: none;
+    font-size: 20px;
 }
 a,
 button {
@@ -288,7 +293,10 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 30px;
 }
 
 .navbar {
@@ -329,7 +337,7 @@ a:hover {
 .nav > li {
     float: left;
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 21px;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -659,11 +667,8 @@ a {
 }
 
 .hero-bloc-text {
-    font-size: 38px;
-}
-
-.hero-bloc-text-sub {
-    font-size: 36px;
+    font-size: 45px;
+    font-weight: bold;
 }
 
 .statement-bloc-text {
@@ -677,7 +682,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -695,7 +700,7 @@ p {
     color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -705,12 +710,12 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -771,7 +776,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background: #F06464;
 }
 
 .tc-white {
@@ -779,12 +784,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #EE6C2F;
+    background: #F06464;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #cf0101!important;
     color: #FFFFFF!important;
 }
 
