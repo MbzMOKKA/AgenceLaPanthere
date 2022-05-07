@@ -1,23 +1,23 @@
 <?php	
-	if(empty($_POST['name']) && strlen($_POST['name']) == 0 || empty($_POST['email']) && strlen($_POST['email']) == 0 || empty($_POST['input_504']) && strlen($_POST['input_504']) == 0 || empty($_POST['message']) && strlen($_POST['message']) == 0)
+	if(empty($_POST['customer_name']) && strlen($_POST['customer_name']) == 0 || empty($_POST['customer_email']) && strlen($_POST['customer_email']) == 0 || empty($_POST['customer_source']) && strlen($_POST['customer_source']) == 0 || empty($_POST['customer_project']) && strlen($_POST['customer_project']) == 0)
 	{
 		return false;
 	}
 	
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$input_504 = $_POST['input_504'];
-	$message = $_POST['message'];
+	$name = $_POST['customer_name'];
+	$email = $_POST['customer_email'];
+	$source = $_POST['customer_source'];
+	$message = $_POST['customer_project'];
 	
-	$to = 'receiver@yoursite.com'; // Email submissions are sent to this email
+	$to = 'contact@agencelapanthere.com'; // Email submissions are sent to this email
 
 	// Create email	
-	$email_subject = "Message from your website";
-	$email_body = "You have received a new message. \n\n".
-				  "Name: $name \nEmail: $email \nInput_504: $input_504 \nMessage: $message \n";
+	$email_subject = "Nouveau contact de client";
+	$email_body = "Un client nous à contacter, voici ces réponses au formulaire : \n\n".
+				  "Nom: $name \nEmail: $email \nDécouverte: $source \nProjet: $message \n";
 	$headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=UTF-8\r\n";	
 	$headers .= "From: contact@yoursite.com\n";
-	$headers .= "Reply-To: $input_504";	
+	$headers .= "Reply-To: $source";	
 	
 	mail($to,$email_subject,$email_body,$headers); // Post message
 	return true;			
