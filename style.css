@@ -115,6 +115,7 @@ a:hover {
 
 .texture-paper::before {
     background: url("img/texture-paper.png");
+    background-color: rgb(0, 0, 0, 0.25);
     background-size: 280px 280px;
 }
 
@@ -778,6 +779,8 @@ h4 {
 }
 
 .portfolio-thumb {
+    width: 320px;
+    margin: auto;
     margin-bottom: 24px;
 }
 
@@ -792,7 +795,9 @@ h4 {
 
 .black-background {
     background-color: rgb(100, 77, 15,0.8);
-    padding: 40px 40px 40px 40px;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .bold-link {
@@ -809,7 +814,7 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background: #F06464;
+    background-color: #F06464;
 }
 
 .tc-white {
@@ -1091,6 +1096,9 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .portfolio-thumb{
+        width: 90%;
     }
 }
 
