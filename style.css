@@ -11,6 +11,9 @@ blockquote{
     padding: 0;
     border: none;
 }
+.footer-desc{
+    font-size: 19px;
+}
 .footer-links{
     display: flex;
     justify-content: center;
